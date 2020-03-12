@@ -1,0 +1,57 @@
+<br/><br/>
+<div class="text-center">
+
+    <img src="../../assets/img/angular-logo.png"/>
+    <h3>Angular 5 Todo List</h3>
+    <p>By David Oluyale</p>
+</div>
+<div class="container-fluid" style="padding-top: 20px;">
+    <div class="row">
+        <div class="col-md-3"></div>
+      <div class="col-md-6 ">
+        <nav class="navbar navbar-default" style="padding-top: 5px;">
+          <div class="container-fluid">
+             <div class="input-group">
+              <span class="input-group-addon">
+          <i class=" fa fa-search" width="20%"></i>
+        </span>
+
+                <input class="form-control"
+              placeholder="Enter Todo..." 
+              autofocus="autofocus"
+              [(ngModel)]="todoText"
+               type="search"  />
+               &nbsp;
+                <button type="submit" class="btn btn-primary btn-md" (click)="addTodoItem()">Add Task</button>   
+           
+            </div>
+           </div>
+        </nav>
+  
+        <ul class="list-group" *ngFor="let todoitem of todoItems; let i = index">
+          
+          
+            <li class="list-group-item filter-user">
+            <div class="list-item-container">
+               
+              <div class="col-md-9">
+                <h2 class="text-center"> {{todoitem}} </h2>
+              </div>
+              <div class="col-md-3 text-center">
+                <a href="#" 
+                (click)="todoItems.splice(i, 1)"
+                class="btn btn-danger btn-sm">
+                    X
+                </a>
+              </div>
+            </div>
+          </li>
+           
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div>
+  <br/><br/>
+</div>
