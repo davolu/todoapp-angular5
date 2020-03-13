@@ -2,6 +2,8 @@
 
 <img src="https://github.com/davolu/todoapp-angular9/blob/master/src/assets/img/screen-capture.gif" />
 Angular 9 Todo list app
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
